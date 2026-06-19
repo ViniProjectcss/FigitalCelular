@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Figital Celular — Especialistas em Apple. iPhone novo e seminovo, Mac, AirPods e acessórios. Garantia real e assistência técnica autorizada.">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Figital Celular — Especialistas em Apple">
+  <meta property="og:description" content="iPhone novo e seminovo, Mac e acessórios com garantia real.">
+  <meta property="og:type" content="website">
+
+  <title>Figital Celular — Especialistas em Apple</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo">
+          <div class="nav-logo-icon"></div>
+          <span class="nav-logo-text">Figital<span>Celular</span></span>
+        </a>
+
+        <!-- Links desktop -->
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#trade-in">Troque seu Aparelho</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#localizacao">Contato</a></li>
+        </ul>
+
+        <!-- CTA desktop -->
+        <div class="nav-cta">
+          <a href="https://wa.me/5511999999999" target="_blank" class="btn-ghost">💬 WhatsApp</a>
+          <a href="#produtos" class="btn-primary">Ver Produtos</a>
+        </div>
+
+        <!-- Burger mobile -->
+        <button class="nav-burger" id="nav-burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close">✕</button>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#trade-in">Troque seu Aparelho</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#localizacao">Contato</a>
+    <a href="https://wa.me/5511999999999" target="_blank" style="color:var(--green)">💬 WhatsApp</a>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <canvas id="particles-canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Texto -->
+        <div class="hero-content">
+
+          <div class="hero-copa-tag">
+            🍎 Especialistas em Apple — Novo e Seminovo
+          </div>
+
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            iPhone, Mac e acessórios originais
+          </div>
+
+          <h1 class="hero-title">
+            Seu próximo iPhone<br>
+            <span class="line-accent">começa aqui.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Aparelhos novos e seminovos com procedência garantida. E o melhor: 
+            <strong style="color:var(--text-primary)">aceitamos seu celular usado como entrada</strong>, 
+            não importa o estado. 
+            <strong id="hero-typing" style="color:var(--green)"></strong>
+          </p>
+
+          <div class="hero-actions">
+            <a href="#produtos" class="btn-hero">
+              🛍️ Ver catálogo
+            </a>
+            <a href="#trade-in" class="btn-hero-outline">
+              🔄 Trocar meu aparelho
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-number"><span data-count="10000" data-suffix="+" class="counter-hero">0+</span></div>
+              <div class="hero-stat-label">Clientes satisfeitos</div>
+            </div>
+            <div>
+              <div class="hero-stat-number"><span data-count="5" data-suffix=" anos" class="counter-hero">0</span></div>
+              <div class="hero-stat-label">de experiência</div>
+            </div>
+            <div>
+              <div class="hero-stat-number"><span data-count="99" data-suffix="%" class="counter-hero">0</span></div>
+              <div class="hero-stat-label">de aprovação</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="hero-visual">
+          <div class="hero-phone-wrap">
+            <div class="hero-phone-glow"></div>
+            <img
+              class="hero-phone-img"
+              src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&q=85"
+              alt="iPhone 15 Pro Max"
+              loading="eager"
+            >
+            <!-- Cards flutuantes -->
+            <div class="hero-float-card card-1">
+              <div class="float-card-icon">⚡</div>
+              <div class="float-card-value">Entrega Rápida</div>
+              <div class="float-card-label">Retirada na loja</div>
+            </div>
+            <div class="hero-float-card card-2">
+              <div class="float-card-icon">🛡️</div>
+              <div class="float-card-value">Garantia 1 Ano</div>
+              <div class="float-card-label">Assistência oficial</div>
+            </div>
+            <div class="hero-float-card card-3">
+              <div class="float-card-icon">💳</div>
+              <div class="float-card-value">18x no Cartão</div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       MARCAS (INFINITE SCROLL)
+  ══════════════════════════════════════════════ -->
+  <section id="brands">
+    <div class="container">
+      <p class="brands-label">Trabalhamos exclusivamente com produtos Apple</p>
+    </div>
+    <div class="brands-track-wrap">
+      <div class="brands-track" id="brands-track">
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">iPhone</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Mac</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">AirPods</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Apple Watch</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Carregadores</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Capinhas</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Assistência Técnica</span></div>
+        <!-- Duplicata -->
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">iPhone</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Mac</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">AirPods</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Apple Watch</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Carregadores</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Capinhas</span></div>
+        <div class="brand-item"><span class="brand-icon"></span><span class="brand-name">Assistência Técnica</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       SOBRE / EMPRESA
+  ══════════════════════════════════════════════ -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <!-- Visual -->
+        <div class="sobre-visual reveal-left">
+          <img
+            class="sobre-img-main"
+              src="/images/cliente1.jpg"
+            alt="Nossa loja"
+          >
+          <div class="sobre-badge-float">
+            <div class="sobre-badge-number">8+</div>
+            <div class="sobre-badge-label">Anos no mercado</div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="sobre-text reveal-right">
+          <span class="section-label">Nossa história</span>
+          <h2 class="section-title">Especialistas em <span>Apple</span></h2>
+          <p class="section-sub">
+            Desde 2016, somos referência em iPhone, Mac e acessórios originais — novos e seminovos, com procedência garantida e os melhores preços da região.
+          </p>
+
+          <ul class="sobre-lista">
+            <li class="sobre-item">
+              <div class="sobre-item-check">✓</div>
+              <p class="sobre-item-text"><strong>Foco exclusivo em Apple</strong> — conhecemos cada detalhe dos produtos que vendemos.</p>
+            </li>
+            <li class="sobre-item">
+              <div class="sobre-item-check">✓</div>
+              <p class="sobre-item-text"><strong>Seminovos revisados</strong> com garantia, testados e aprovados antes da venda.</p>
+            </li>
+            <li class="sobre-item">
+              <div class="sobre-item-check">✓</div>
+              <p class="sobre-item-text"><strong>Aceitamos seu aparelho usado como entrada</strong> — não importa o estado, sempre fazemos uma proposta.</p>
+            </li>
+            <li class="sobre-item">
+              <div class="sobre-item-check">✓</div>
+              <p class="sobre-item-text"><strong>Assistência técnica especializada</strong> em toda linha Apple, com peças de qualidade.</p>
+            </li>
+          </ul>
+
+          <a href="#produtos" class="btn-primary" style="margin-top:32px; display:inline-flex">
+            Ver nosso catálogo →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       CONTADORES
+  ══════════════════════════════════════════════ -->
+  <section id="contadores">
+    <div class="container">
+      <div class="contadores-grid">
+        <div class="contador-item reveal">
+          <div class="contador-number" data-count="5000" data-suffix="+">0</div>
+          <div class="contador-label">Clientes atendidos</div>
+        </div>
+        <div class="contador-item reveal">
+          <div class="contador-number" data-count="12000" data-suffix="+">0</div>
+          <div class="contador-label">Aparelhos vendidos</div>
+        </div>
+        <div class="contador-item reveal">
+          <div class="contador-number" data-count="98" data-suffix="%">0</div>
+          <div class="contador-label">Satisfação dos clientes</div>
+        </div>
+        <div class="contador-item reveal">
+          <div class="contador-number" data-count="8" data-suffix=" anos">0</div>
+          <div class="contador-label">De experiência</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       DIFERENCIAIS
+  ══════════════════════════════════════════════ -->
+  <section id="diferenciais">
+    <div class="container">
+      <div class="diff-header reveal">
+        <span class="section-label">Por que escolher a gente</span>
+        <h2 class="section-title">Mais do que uma loja,<br>um <span>parceiro de tecnologia</span></h2>
+        <p class="section-sub">Cada detalhe do nosso atendimento foi pensado para que você compre com total segurança e confiança.</p>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card reveal" data-delay="0">
+          <div class="diff-card-icon">🍎</div>
+          <div class="diff-card-title">Foco 100% Apple</div>
+          <p class="diff-card-desc">Especialistas em iPhone e Mac. Conhecemos cada modelo a fundo para te orientar melhor.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="1">
+          <div class="diff-card-icon">🔄</div>
+          <div class="diff-card-title">Seu Usado na Troca</div>
+          <p class="diff-card-desc">Aceitamos seu aparelho como entrada, não importa o estado. Avaliação justa, na hora.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="2">
+          <div class="diff-card-icon">🔧</div>
+          <div class="diff-card-title">Assistência Técnica</div>
+          <p class="diff-card-desc">Manutenção especializada em toda linha Apple, com peças de qualidade e garantia no serviço.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="3">
+          <div class="diff-card-icon">✅</div>
+          <div class="diff-card-title">Seminovos Garantidos</div>
+          <p class="diff-card-desc">Cada aparelho seminovo passa por revisão completa antes de ir para a vitrine.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="0">
+          <div class="diff-card-icon">📦</div>
+          <div class="diff-card-title">Produto Original</div>
+          <p class="diff-card-desc">100% originais com nota fiscal. Zero riscos de comprar réplica ou produto adulterado.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="1">
+          <div class="diff-card-icon">💳</div>
+          <div class="diff-card-title">18x no Cartão</div>
+          <p class="diff-card-desc">Parcelamento facilitado no crédito, débito, PIX ou dinheiro. Sem surpresas na fatura.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="2">
+          <div class="diff-card-icon">🎓</div>
+          <div class="diff-card-title">Consultoria Gratuita</div>
+          <p class="diff-card-desc">Não sabe qual modelo escolher? Nossos especialistas indicam o melhor para o seu perfil.</p>
+        </div>
+        <div class="diff-card reveal" data-delay="3">
+          <div class="diff-card-icon">💰</div>
+          <div class="diff-card-title">Melhor Preço</div>
+          <p class="diff-card-desc">Achou mais barato? Mostra pra gente — nossa política é sempre bater ou igualar o preço.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       TRADE-IN — TROQUE SEU APARELHO
+  ══════════════════════════════════════════════ -->
+  <section id="trade-in" style="padding:110px 0; background:var(--bg-deep); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <!-- Texto -->
+        <div class="reveal-left">
+          <span class="section-label">Troca facilitada</span>
+          <h2 class="section-title">Seu aparelho velho vale <span>desconto real</span></h2>
+          <p class="section-sub">
+            Não importa o estado do seu iPhone — com tela quebrada, sem bateria, riscado ou até desligado. 
+            A gente avalia e usa como parte do pagamento no seu aparelho novo ou seminovo.
+          </p>
+
+          <ul class="sobre-lista">
+            <li class="sobre-item">
+              <div class="sobre-item-check">1</div>
+              <p class="sobre-item-text"><strong>Traga seu aparelho</strong> na loja, do jeito que ele estiver — quebrado, gasto, sem problema.</p>
+            </li>
+            <li class="sobre-item">
+              <div class="sobre-item-check">2</div>
+              <p class="sobre-item-text"><strong>Fazemos uma avaliação justa</strong> na hora, sem enrolação e sem letras miúdas.</p>
+            </li>
+            <li class="sobre-item">
+              <div class="sobre-item-check">3</div>
+              <p class="sobre-item-text"><strong>O valor entra como desconto</strong> direto no iPhone ou Mac novo ou seminovo que você escolher.</p>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20avaliar%20meu%20aparelho%20usado%20para%20troca." target="_blank" class="btn-primary" style="margin-top:32px; display:inline-flex">
+            🔄 Avaliar meu aparelho →
+          </a>
+        </div>
+
+        <!-- Visual -->
+        <div class="sobre-visual reveal-right">
+          <img
+            class="sobre-img-main"
+            src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=700&q=80"
+            alt="Troca de iPhone usado"
+          >
+          <div class="sobre-badge-float">
+            <div class="sobre-badge-number">100%</div>
+            <div class="sobre-badge-label">Aparelhos aceitos</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       PRODUTOS (carregado via API)
+  ══════════════════════════════════════════════ -->
+  <section id="produtos">
+    <div class="container">
+      <div class="produtos-header">
+        <div class="reveal">
+          <span class="section-label">Catálogo</span>
+          <h2 class="section-title">Nossos <span>produtos</span></h2>
+        </div>
+
+        <!-- Filtros por categoria -->
+        <div class="produtos-filters">
+          <button class="filter-btn active" data-marca="Todos" onclick="filtrarProdutos('Todos')">Todos</button>
+          <button class="filter-btn" data-marca="iPhone" onclick="filtrarProdutos('iPhone')">📱 iPhone</button>
+          <button class="filter-btn" data-marca="Mac" onclick="filtrarProdutos('Mac')">💻 Mac</button>
+          <button class="filter-btn" data-marca="Acessórios" onclick="filtrarProdutos('Acessórios')">🎧 Acessórios</button>
+          <button class="filter-btn" data-marca="Seminovo" onclick="filtrarProdutos('Seminovo')">♻️ Seminovos</button>
+        </div>
+      </div>
+
+      <!-- Grid gerado automaticamente pelo JS via celulares.json -->
+      <div class="produtos-grid" id="produtos-grid"></div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       PROMOÇÕES
+  ══════════════════════════════════════════════ -->
+  <section id="promocoes">
+    <div class="container">
+      <div class="promo-header reveal">
+        <span class="section-label">Ofertas imperdíveis</span>
+        <h2 class="section-title">Promoções <span>em destaque</span></h2>
+        <p class="section-sub">Aproveite enquanto dura. Preços exclusivos por tempo limitado em iPhone, Mac e acessórios.</p>
+      </div>
+
+      <div class="promo-grid">
+
+        <!-- Destaque principal -->
+        <div class="promo-card promo-card-featured reveal">
+          <div class="promo-bg-gradient" style="background: linear-gradient(135deg, rgba(34,197,94,0.06) 0%, rgba(22,163,74,0.03) 100%);"></div>
+          <div class="promo-emoji">🍎</div>
+          <div class="promo-card-inner">
+            <span class="promo-tag tag-green">⚡ Oferta da semana</span>
+            <h3 class="promo-card-title">iPhone 15 Pro Max<br>Titânio Natural</h3>
+            <p class="promo-card-sub">Chip A17 Pro · Câmera 48MP · USB-C · Novo, lacrado</p>
+
+            <!-- Countdown -->
+            <div class="promo-timer">
+              <div class="timer-unit">
+                <div class="timer-num" id="timer-hora">00</div>
+                <div class="timer-label">horas</div>
+              </div>
+              <div class="timer-unit">
+                <div class="timer-num" id="timer-min">00</div>
+                <div class="timer-label">min</div>
+              </div>
+              <div class="timer-unit">
+                <div class="timer-num" id="timer-sec">00</div>
+                <div class="timer-label">seg</div>
+              </div>
+            </div>
+
+            <div class="promo-card-price">
+              <span>De R$ 10.499</span>
+              R$ 8.999,99
+            </div>
+          </div>
+        </div>
+
+        <!-- Promoções menores -->
+        <div class="promo-card reveal" data-delay="1">
+          <div class="promo-bg-gradient" style="background: linear-gradient(135deg, rgba(212,168,67,0.05) 0%, transparent 100%);"></div>
+          <div class="promo-card-inner">
+            <span class="promo-tag tag-gold">♻️ Seminovo</span>
+            <h3 class="promo-card-title">iPhone 14 Pro</h3>
+            <p class="promo-card-sub">Revisado · Com garantia · Dynamic Island</p>
+            <div class="promo-card-price">
+              <span>De R$ 5.999</span> R$ 4.799,99
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-card reveal" data-delay="2">
+          <div class="promo-bg-gradient" style="background: linear-gradient(135deg, rgba(239,68,68,0.04) 0%, transparent 100%);"></div>
+          <div class="promo-card-inner">
+            <span class="promo-tag tag-red">🔥 Hot</span>
+            <h3 class="promo-card-title">MacBook Air M2</h3>
+            <p class="promo-card-sub">13.6" · 18h de bateria · Novo</p>
+            <div class="promo-card-price">
+              <span>De R$ 9.999</span> R$ 8.499,99
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-card reveal" data-delay="1">
+          <div class="promo-bg-gradient" style="background: linear-gradient(135deg, rgba(34,197,94,0.04) 0%, transparent 100%);"></div>
+          <div class="promo-card-inner">
+            <span class="promo-tag tag-green">💚 Mais vendido</span>
+            <h3 class="promo-card-title">AirPods Pro 2</h3>
+            <p class="promo-card-sub">Cancelamento de ruído · USB-C</p>
+            <div class="promo-card-price">
+              <span>De R$ 2.199</span> R$ 1.799,99
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-card reveal" data-delay="2">
+          <div class="promo-bg-gradient" style="background: linear-gradient(135deg, rgba(212,168,67,0.04) 0%, transparent 100%);"></div>
+          <div class="promo-card-inner">
+            <span class="promo-tag tag-gold">⭐ Custo-benefício</span>
+            <h3 class="promo-card-title">iPhone 13 Seminovo</h3>
+            <p class="promo-card-sub">Revisado · Bateria testada</p>
+            <div class="promo-card-price">
+              <span>De R$ 3.799</span> R$ 2.999,99
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       DEPOIMENTOS
+  ══════════════════════════════════════════════ -->
+  <section id="depoimentos">
+    <div class="container">
+      <div class="depo-header reveal">
+        <span class="section-label">O que dizem nossos clientes</span>
+        <h2 class="section-title">Mais de <span>10.000 clientes</span> satisfeitos</h2>
+        <p class="section-sub">A confiança dos nossos clientes é nosso maior patrimônio. Veja o que eles dizem.</p>
+      </div>
+
+      <div class="depo-grid">
+
+        <div class="depo-card reveal" data-delay="0">
+          <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+          <p class="depo-text">"Eles são excelentes!! Atendimento diferenciado, local tranquilo, comprei o meu no ano passado, e já aguardando agosto/set pra adquirir outro. 🤭💕"</p>
+          <div class="depo-author">
+            <div class="depo-avatar">MS</div>
+            <div>
+              <div class="depo-name">Tatiane Teixeira</div>
+              <div class="depo-info">São Paulo</div>
+              <div class="depo-verified">✅ Compra verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo-card reveal" data-delay="1">
+          <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+          <p class="depo-text">"Melhor loja e os melhores vendedores de Taboão 🤩"</p>
+          <div class="depo-author">
+            <div class="depo-avatar" style="background:linear-gradient(135deg,#d4a843,#b8860b);">AF</div>
+            <div>
+              <div class="depo-name">Luana França</div>
+              <div class="depo-info">São Paulo</div>
+              <div class="depo-verified">✅ Compra verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo-card reveal" data-delay="2">
+          <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+          <p class="depo-text">"Obrigado por tudo, Figital é a melhor Que Deus te abençoe vocês!"</p>
+          <div class="depo-author">
+            <div class="depo-avatar" style="background:linear-gradient(135deg,#6366f1,#4f46e5);">RC</div>
+            <div>
+              <div class="depo-name">Dr. Guilherme Rocha</div>
+              <div class="depo-info">São Paulo</div>
+              <div class="depo-verified">✅ Atendimento verificado</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo-card reveal" data-delay="0">
+          <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+          <p class="depo-text">"Obrigado pessoal, atendimento impecável, obrigado por tirar todas as minhas dúvidas e receios, Aline 👏🏼👏🏼👏🏼 parabéns pelo atendimento! Do início ao fim! Impecável 😍"</p>
+          <div class="depo-author">
+            <div class="depo-avatar" style="background:linear-gradient(135deg,#ec4899,#be185d);">PL</div>
+            <div>
+              <div class="depo-name">Jeferson Lima</div>
+              <div class="depo-info">São Paulo · Cliente fidelizado</div>
+              <div class="depo-verified">✅ Compra verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo-card reveal" data-delay="1">
+          <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+          <p class="depo-text">"Melhor loja e a melhor atendimento pessoas sempre feliz com a vida"</p>
+          <div class="depo-author">
+            <div class="depo-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706);">JM</div>
+            <div>
+              <div class="depo-name">Pr Antonio Ribeiro</div>
+              <div class="depo-info">São paulo</div>
+              <div class="depo-verified">✅ Compra verificada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="depo-card reveal" data-delay="2">
+          <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+          <p class="depo-text">"Atendimento pelo WhatsApp resolveu tudo antes mesmo de ir à loja. Quando cheguei, estava tudo separado e em 10 minutos eu sai com meu celular novo!"</p>
+          <div class="depo-author">
+            <div class="depo-avatar" style="background:linear-gradient(135deg,#14b8a6,#0d9488);">CR</div>
+            <div>
+              <div class="depo-name">Vinicius Macedo</div>
+              <div class="depo-info">Taboão da Serra</div>
+              <div class="depo-verified">✅ Compra verificada</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       LOCALIZAÇÃO / MAPA
+  ══════════════════════════════════════════════ -->
+  <section id="localizacao">
+    <div class="container">
+      <div class="loca-grid">
+
+        <!-- Info -->
+        <div class="reveal-left">
+          <span class="section-label">Nos encontre</span>
+          <h2 class="section-title">Venha nos <span>visitar</span></h2>
+          <p class="section-sub">Estamos localizados ao lado do Shopping Taboão da Serra.</p>
+
+          <div class="loca-contact-items">
+            <div class="loca-contact-item">
+              <div class="loca-icon">📍</div>
+              <div>
+                <div class="loca-text-label">Endereço</div>
+                <div class="loca-text-value">Estrada São Francisco, 2008 - Sala 702</div>
+              </div>
+            </div>
+            <div class="loca-contact-item">
+              <div class="loca-icon">🕐</div>
+              <div>
+                <div class="loca-text-label">Horário de funcionamento</div>
+                <div class="loca-text-value">Seg–Sex: 10h às 19h · Sábado: 10h às 15h</div>
+              </div>
+            </div>
+            <a href="tel:+5511964920161" class="loca-contact-item" style="text-decoration:none">
+              <div class="loca-icon">📞</div>
+              <div>
+                <div class="loca-text-label">Telefone / WhatsApp</div>
+                <div class="loca-text-value">(11) 96492-0161</div>
+              </div>
+            </a>
+            <a href="mailto:contato@figitalcelular.com.br" class="loca-contact-item" style="text-decoration:none">
+              <div class="loca-icon">✉️</div>
+              <div>
+                <div class="loca-text-label">E-mail</div>
+                <div class="loca-text-value">contato@figitalcelular.com.br</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="https://wa.me/5511964920161" target="_blank" class="btn-primary">
+            💬 Chamar no WhatsApp
+          </a>
+        </div>
+
+        <!-- Mapa placeholder -->
+
+<div class="reveal-right">
+    <a
+        href="https://www.google.com/maps/place/Figital+celulares/@-23.6176435,-46.7755969,19z/data=!3m1!4b1!4m6!3m5!1s0x94ce555a5c9b5153:0xec8295094d8347a2!8m2!3d-23.6176447!4d-46.7749532!16s%2Fg%2F11xtl3jfzt"
+        target="_blank"
+        class="map-image"
+    >
+        <img
+            src="/images/mapa-loja.png"
+            alt="Localização da Figital Celular"
+        >
+    </a>
+</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:0">
+            <div class="nav-logo-icon">📱</div>
+            <span class="nav-logo-text">Figital<span>Celular</span></span>
+          </div>
+          <p>A loja de celulares que combina tecnologia, confiança e os melhores preços da região. Seu parceiro ideal desde 2016.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" title="Instagram">📸</a>
+            <a href="#" class="social-link" title="Facebook">👍</a>
+            <a href="https://wa.me/5511999999999" class="social-link" title="WhatsApp" target="_blank">💬</a>
+            <a href="#" class="social-link" title="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <div class="footer-col-title">Produtos</div>
+          <ul class="footer-links">
+            <li><a href="#produtos">iPhones</a></li>
+            <li><a href="#produtos">Samsung Galaxy</a></li>
+            <li><a href="#produtos">Motorola</a></li>
+            <li><a href="#produtos">Xiaomi</a></li>
+            <li><a href="#produtos">Acessórios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Empresa</div>
+          <ul class="footer-links">
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#localizacao">Contato</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <div class="footer-col-title">Receba ofertas</div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:16px;line-height:1.6;">Cadastre seu e-mail e receba promoções exclusivas em primeira mão.</p>
+          <div class="footer-newsletter">
+            <input type="email" placeholder="seu@email.com.br">
+            <button class="btn-primary" onclick="showToast('✅ Cadastro realizado com sucesso!')">Quero ofertas</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>© 2024 Figital Celular. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+        <div class="footer-copa">
+          🏆 Orgulhosamente brasileiro
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de uso</a>
+          <a href="#">Trocas e devoluções</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════════
+       WHATSAPP FLUTUANTE
+  ══════════════════════════════════════════════ -->
+  <div class="whatsapp-float">
+    <div class="whatsapp-tooltip">Fale conosco agora!</div>
+    <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20tenho%20interesse%20em%20um%20celular." 
+       target="_blank" 
+       class="whatsapp-btn" 
+       aria-label="Contato pelo WhatsApp">
+      💬
+    </a>
+  </div>
+
+  <!-- Toast global -->
+  <div class="toast" id="global-toast">
+    <span class="toast-icon">✅</span>
+    <span id="toast-msg"></span>
+  </div>
+
+  <script src="/js/main.js"></script>
+
+  <!-- Contadores hero animados separados (executados antes do scroll) -->
+  <script>
+    // Contador do hero (sem IntersectionObserver — visível imediatamente)
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.counter-hero').forEach(el => {
+        const target = parseFloat(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const duration = 2000;
+        const start = performance.now();
+        function step(now) {
+          const p = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(2, -10 * p);
+          el.textContent = Math.floor(target * ease).toLocaleString('pt-BR') + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        }
+        setTimeout(() => requestAnimationFrame(step), 600);
+      });
+    });
+  </script>
+</body>
+</html>
