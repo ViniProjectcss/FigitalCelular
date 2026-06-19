@@ -112,20 +112,6 @@
     "badge": "Custo-benefício"
   },
   {
-    "id": 9,
-    "nome": "MacBook Pro 14\" M3",
-    "marca": "Apple",
-    "categoria": "Mac",
-    "condicao": "Novo",
-    "preco": 16999.99,
-    "preco_antigo": 18999.99,
-    "descricao": "Chip M3 Pro, tela Liquid Retina XDR de 14\" e até 18h de bateria. Para uso profissional.",
-    "imagem": "https://images.unsplash.com/photo-1639249227523-21e8d8b86dbe?w=400&q=80",
-    "destaque": true,
-    "estoque": "disponivel",
-    "badge": "Premium"
-  },
-  {
     "id": 10,
     "nome": "MacBook Pro 16\" M3",
     "marca": "Apple",
@@ -152,20 +138,6 @@
     "destaque": false,
     "estoque": "disponivel",
     "badge": "Mais Vendido"
-  },
-  {
-    "id": 12,
-    "nome": "Capinha Transparente",
-    "marca": "Apple",
-    "categoria": "Acessórios",
-    "condicao": "Novo",
-    "preco": 89.99,
-    "preco_antigo": 129.99,
-    "descricao": "Capinha transparente em TPU resistente a amarelamento, com proteção nas bordas. Compatível com diversos modelos de iPhone.",
-    "imagem": "https://images.unsplash.com/photo-1592286927505-1def25115481?w=400&q=80",
-    "destaque": false,
-    "estoque": "disponivel",
-    "badge": "Oferta"
   },
   {
     "id": 13,
