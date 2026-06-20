@@ -159,7 +159,7 @@
   function renderCard(cel, idx) {
     const desconto = calcDesconto(cel.preco, cel.preco_antigo);
     const whatsappMsg = encodeURIComponent(`Olá! Tenho interesse no ${cel.nome} por ${formatPreco(cel.preco)}. Ainda disponível?`);
-    const whatsappLink = `https://wa.me/5511999999999?text=${whatsappMsg}`;
+    const whatsappLink = `https://wa.me/5511964920161?text=${whatsappMsg}`;
 
     return `
       <div class="produto-card reveal" data-delay="${idx % 4}" data-categoria="${cel.categoria}" data-condicao="${cel.condicao}" data-id="${cel.id}">
@@ -252,7 +252,7 @@ window.consultarWhatsApp = function(id) {
   const cel = (window._todosOsCelulares || []).find(c => c.id === id);
   if (!cel) return;
   const msg = encodeURIComponent(`Olá! Tenho interesse no ${cel.nome}. Poderia me informar mais detalhes e formas de pagamento?`);
-  window.open(`https://wa.me/5511999999999?text=${msg}`, '_blank');
+  window.open(`https://wa.me/5511964920161?text=${msg}`, '_blank');
 };
 
 // ─── 7. WISHLIST ──────────────────────────────────────────────────────────────
